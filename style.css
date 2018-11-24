@@ -4,14 +4,69 @@ body {
   justify-content: center;
   height: 100vh;
   margin: 0;
+  background-color: 00000;
 }
+
 .container{
   display: flex;
-  width: 250px;
-  height:25px;
+  justify-content: center;
+  height:100px;
+  width:100vh;
+}
+.color_container{
+  display: flex;
+  justify-content: center;
+  position:absolute;
+  margin-top:58px;
+  width:100vh;
+  height:10px;
+  background: linear-gradient(-45deg, #EE7752, #E73C7E, #23A6D5, #23D5AB);
+  background-size: 400% 400%;
+  -webkit-animation: Gradient 15s ease infinite;
+  -moz-animation: Gradient 15s ease infinite;
+  animation: Gradient 15s ease infinite;
+  z-index: 1;
 }
 .logo{
-  background: url('animcrew_logo_v1@3x.png') no-repeat;
-  background-size: 100% 100%;
-  width: 100%;
+  display: flex;
+  background: url(Logo_final_simbol.svg) no-repeat;
+  width: 101px;
+  height:100px;
+  z-index: 2;
+}
+
+@-webkit-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@-moz-keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
+}
+
+@keyframes Gradient {
+  0% {
+    background-position: 0% 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0% 50%
+  }
 }
